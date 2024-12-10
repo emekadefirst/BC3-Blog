@@ -1,0 +1,12 @@
+from django.shortcuts import render, get_object_or_404, redirect
+from .models import Blog, Comment
+
+def blog_detail(request, pk):
+    blog = get_object_or_404(Blog, pk=pk)
+    if request.method == "POST":
+        content = request.POST.get('content')  # Get the content from the POST request
+        if content:  # Ensure the content is not empty
+            comment = Comment.objects.create(blog=blog, content=content)
+            comment.save()
+            return redirect('blog_detail', pk=blog.pk)
+    return render(request, 'blog_detail.html', {'blog': blog})
