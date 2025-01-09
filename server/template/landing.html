@@ -1,0 +1,61 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotePro - Your Digital Notebook</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-white shadow-lg">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-xl font-bold text-purple-600">NotePro</div>
+                <div>
+                    <a href="notes.html"
+                        class="bg-purple-600 text-white px-4 py-2 rounded-lg hover:bg-purple-700 transition-colors">
+                        My Notes
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto px-4 mt-16">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-gray-900 mb-4">
+                Capture Your Thoughts with NotePro
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+                Simple, fast, and secure note-taking for your daily needs
+            </p>
+            <a href="notes.html"
+                class="bg-purple-600 text-white px-8 py-3 rounded-lg text-lg hover:bg-purple-700 transition-colors inline-block">
+                Start Taking Notes
+            </a>
+        </div>
+
+        <div class="grid md:grid-cols-3 gap-8 mt-16">
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-purple-600 text-2xl mb-4">📝</div>
+                <h3 class="text-xl font-semibold mb-2">Easy to Use</h3>
+                <p class="text-gray-600">Simple interface for quick note-taking without any distractions.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-purple-600 text-2xl mb-4">🔄</div>
+                <h3 class="text-xl font-semibold mb-2">Quick Edit</h3>
+                <p class="text-gray-600">Edit your notes instantly with our seamless editing feature.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md">
+                <div class="text-purple-600 text-2xl mb-4">🗑️</div>
+                <h3 class="text-xl font-semibold mb-2">Easy Delete</h3>
+                <p class="text-gray-600">Remove unwanted notes with a single click.</p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
